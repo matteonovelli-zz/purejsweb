@@ -1,0 +1,61 @@
+.ticket-card {
+  display: grid;
+  grid-template-areas: 
+    "ticket-header ticket-header"
+    "ticket-movie ticket-seat"
+    "ticket-snack ticket-queue"
+    "ticket-total ticket-price";
+}
+
+.ticket-header {
+  grid-area: ticket-header;
+  padding-bottom: 1rem;
+}
+
+.ticket-movie {
+  grid-area: ticket-movie;
+  padding-bottom: 0.5rem;
+}
+
+.ticket-snack {
+  grid-area: ticket-snack;
+}
+
+.ticket-total {
+  grid-area: ticket-total;
+  padding-bottom: 1rem;
+}
+
+.ticket-seat {
+  grid-area: ticket-seat;
+  text-align: right;
+  padding-bottom: 0.5rem;
+}
+
+.ticket-queue {
+  grid-area: ticket-queue;
+  text-align: right;
+  padding-bottom: 1rem;
+}
+
+.ticket-price {
+  grid-area: ticket-price;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .ticket-total {
+    grid-area: ticket-total;
+    padding-bottom: 0;
+  }
+
+  .ticket-seat {
+    grid-area: ticket-seat;
+    text-align: right;
+    padding-bottom: 1rem;
+  }
+
+  .ticket-movie {
+    padding-bottom: 0;
+  }
+}

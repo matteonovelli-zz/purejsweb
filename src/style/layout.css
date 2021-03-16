@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "films"
+    "snacks"
+    "confirm"
+    "ticket";
+  row-gap: 2rem;
+}
+
+.header {
+  grid-area: header;
+}
+
+.films {
+  grid-area: films;
+}
+
+.snacks {
+  grid-area: snacks;
+}
+
+.confirm {
+  grid-area: confirm;
+}
+
+.ticket {
+  grid-area: ticket;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000055;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 1rem;
+  width: 300px;
+}

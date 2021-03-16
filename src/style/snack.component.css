@@ -1,0 +1,65 @@
+.snacks-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.snack {
+  display: grid;
+  grid-template-areas: 
+    "snack-name"
+    "snack-price"
+    "snack-confirm";
+}
+
+.snack-name {
+  grid-template-rows: snack-name;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.snack-price {
+  grid-template-rows: snack-price;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.snack-confirm {
+  grid-template-rows: snack-confirm;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .snacks-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    column-gap: unset;
+    row-gap: 1rem;
+  }
+
+  .ticket-card {
+    display: grid;
+    grid-template-areas: 
+      "ticket-header"
+      "ticket-movie"
+      "ticket-seat"
+      "ticket-snack"
+      "ticket-queue"
+      "ticket-total"
+      "ticket-price";
+  }
+
+  .ticket-seat {
+    text-align: left;
+  }
+  
+  .ticket-queue {
+    text-align: left;
+  }
+  
+  .ticket-price {
+    text-align: left;
+  }
+}

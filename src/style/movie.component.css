@@ -1,0 +1,89 @@
+.movies-list {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr;
+  row-gap: 1rem;
+}
+
+.movie {
+  display: grid;
+  grid-template-areas: 
+    "movie-image movie-separator movie-title movie-price"
+    "movie-image movie-separator movie-genre movie-confirm";
+  grid-template-columns: 150px 1px 1fr 1fr;
+}
+
+.movie-separator {
+  grid-area: movie-separator;
+  background-color: black;
+  margin: -1rem 0 -1rem 0;
+}
+
+.movie-image {
+  grid-area: movie-image;
+  text-align: center;
+}
+
+.movie-title {
+  grid-area: movie-title;
+  padding-left: 1rem;
+}
+
+.movie-price {
+  grid-area: movie-price;
+  text-align: right;
+}
+
+
+.movie-genre {
+  grid-area: movie-genre;
+  padding-left: 1rem;
+}
+
+.movie-confirm {
+  grid-area: movie-confirm;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .movie {
+    display: grid;
+    grid-template-areas: 
+      "movie-image"
+      "movie-separator" 
+      "movie-title" 
+      "movie-genre"
+      "movie-price"
+      "movie-confirm";
+    grid-template-rows: 170px 1px auto auto auto auto;
+    grid-template-columns: auto;
+  }
+
+  .movie-separator {
+    grid-area: movie-separator;
+    background-color: black;
+    margin: 0 -1rem 0 -1rem;
+  }
+
+  .movie-price {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .movie-title {
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .movie-genre {
+    padding-left: 0;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .movie-confirm {
+    text-align: center;
+  }
+}

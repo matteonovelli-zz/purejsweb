@@ -1,0 +1,35 @@
+{
+  "name": "creditas-frontend-challenge",
+  "version": "1.0.0",
+  "description": "My solution for the Creditas frontend challenge.",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "tdd": "jest --watch",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "Matteo Novelli",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.13.10",
+    "@types/jest": "^26.0.20",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^8.0.0",
+    "core-js": "^3.9.1",
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^26.6.3",
+    "regenerator-runtime": "^0.13.7",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
